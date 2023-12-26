@@ -1,0 +1,120 @@
+/* Set default and use more intuitive box modell*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins !important;
+}
+
+/* Identical with <html> but higher specify */
+:root {
+    /*Declare and initialisize used colors */
+    --clr-primary-purple: hsl(259, 100%, 65%);
+    --clr-primary-light-red: hsl(0, 100%, 67%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-off-white: hsl(0, 0%, 94%);
+    --clr-light-grey: hsl(0, 1%, 44%);
+    --clr-off-black: hsl(0, 0%, 8%);
+
+    /* Declare and initialisize used font, font size and wight */
+    --font-weight-small-italic: 400;
+    --font-weight-regular: 700;
+    --font-weight-big-italic: 800;
+    --font-size-default: 32px;
+}
+
+body {
+    background-color: var(--clr-off-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: var(--clr-white);
+    border-radius: 2em 2em 10em 2em;
+    padding: 1em 10em 1em 1em;
+    position: fixed;
+}
+
+form {
+    display: flex;
+    column-gap: 3em;
+    border-bottom: 1px solid var(--clr-light-grey);
+    padding-bottom: 3em;
+}
+
+.input-day,
+.input-month,
+.input-year {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5em;
+    font-weight: bold;
+}
+
+input {
+    font-size: var(--font-size-default);
+    border: 1px solid var(--clr-light-grey);
+    border-radius: 0.25em 0.25em 0.25em 0.25em;
+}
+
+.input-errorState {
+    border: 2px solid var(--clr-primary-light-red);
+}
+
+
+#submit-button {
+    background-color: var(--clr-primary-purple);
+    border: none;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+    top: 20%;
+    left: 85%;
+}
+
+#submit-button:hover {
+    background: var(--clr-off-black);
+}
+
+.output > h1 > span {
+    color: var(--clr-primary-purple);
+}
+
+.output > h1 {
+    font-size: 2em;
+    font-weight: var(--font-weight-big-italic);
+    font-style: italic;
+    font-size: 80px;
+}
+
+.output > h1:first-child {
+    margin-top: 0.5em;
+}
+
+.error-message {
+    color: var(--clr-primary-light-red);
+    font-weight: normal;
+    border-color: red;
+}
+
+/* reference: https://stackoverflow.com/questions/18147642/css-centering-absolute-positioned-text-inside-relative-parent */
+.attribution {
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    text-align: center;
+
+    font-size: 12px;
+    font-weight: var(--font-weight-regular);
+}
+
+
