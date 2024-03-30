@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "Poppins";
+    src: url("../assets/fonts/Poppins-Regular.ttf") format("ttf");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .error-message {
+        @apply text-primary-light-red text-xs font-light italic absolute -bottom-6;
+    }
+}
+
