@@ -562,7 +562,7 @@ video {
 
 .error-message {
   position: absolute;
-  bottom: -1.5rem;
+  bottom: -2rem;
   font-size: 0.75rem;
   line-height: 1rem;
   font-weight: 300;
@@ -600,8 +600,17 @@ video {
   margin-right: 0.75rem;
 }
 
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .-ml-8 {
   margin-left: -2rem;
+}
+
+.mt-auto {
+  margin-top: auto;
 }
 
 .block {
@@ -738,8 +747,17 @@ video {
   padding-top: 2.5rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .font-poppins {
   font-family: Poppins, sans-serif;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-6xl {
@@ -751,12 +769,21 @@ video {
   font-weight: 900;
 }
 
+.font-thin {
+  font-weight: 100;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
 
 .italic {
   font-style: italic;
+}
+
+.text-neutral-off-black {
+  --tw-text-opacity: 1;
+  color: hsl(0 0% 8% / var(--tw-text-opacity));
 }
 
 .text-neutral-smokey-grey {
@@ -769,26 +796,6 @@ video {
   color: hsl(259 100% 65% / var(--tw-text-opacity));
 }
 
-.placeholder\:text-3xl::-moz-placeholder {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.placeholder\:text-3xl::placeholder {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.placeholder\:text-2xl::-moz-placeholder {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.placeholder\:text-2xl::placeholder {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .placeholder\:text-xl::-moz-placeholder {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -797,6 +804,11 @@ video {
 .placeholder\:text-xl::placeholder {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.invalid\:border-primary-light-red:invalid {
+  --tw-border-opacity: 1;
+  border-color: hsl(0 100% 67% / var(--tw-border-opacity));
 }
 
 @media (min-width: 640px) {

@@ -9,7 +9,7 @@
 
 @layer components {
     .error-message {
-        @apply text-primary-light-red text-xs font-light italic absolute -bottom-6;
+        @apply text-primary-light-red text-xs font-light italic absolute -bottom-8;
     }
 }
 
